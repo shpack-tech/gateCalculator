@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset-default.css">
+    <title>Калькулятор - ворота</title>
+</head>
+<body>
+    <section class="calculator_block">
+        <div class="calculator_body wrapped">
+            <div class="calculator">
+
+
+                <!--Отображение результата-->
+
+                <div class="info_block">
+                    <div class="headliner">Гаражные секционные ворота</div>
+                    <div class="gate_display">
+                        <img src="img/gateL-Sicke.png" alt="">
+                    </div>
+                    <div class="reset"></div>
+                </div>
+
+
+                <!--Блок выбора-->
+
+                <div class="manipulation_block">
+                    <div class="manipulation_block_el model">
+                        <div class="manipulation_title">Размеры: (Ширина × Высота) <span class="reload">Сброс</span></div>
+                        <div class="manipulation_action">
+                            <div class="selector">
+                                <select name="model_sel" id="model_sel">
+                                    <option data-price="0">2500 × 2125 мм</option>
+                                    <option data-price="1">2500 × 2250 мм</option>
+                                    <option data-price="2">2500 × 2500 мм</option>
+                                    <option data-price="3">2750 × 2125 мм</option>
+                                    <option data-price="4">2750 × 2250 мм</option>
+                                    <option data-price="5">2500 × 2500 мм</option>
+                                    <option data-price="6">3000 × 2125 мм</option>
+                                    <option data-price="7">3000 × 2250 мм</option>
+                                    <option data-price="8">3000 × 2500 мм</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manipulation_block_el type">
+                        <div class="manipulation_title">Мотив ворот: <span class="info" data-info="type">&#9432; Узнать больше</span></div>
+                        <div class="manipulation_action">
+                            <div data-pool="l_prices" class="l_gofr active item">
+                                <img src="img/L-Sicke.png" alt="">
+                                <div class="manipulation_label">L-гофр</div>
+                            </div>
+                            <div data-pool="m_prices" class="m_gofr item">
+                                <img src="img/M-Sicke.png" alt="">
+                                <div class="manipulation_label">M-гофр</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manipulation_block_el texture">
+                        <div class="manipulation_title">Поверхность: <span class="info" data-info="texture">&#9432; Узнать больше</span></div>
+                        <div class="manipulation_action">
+                            <div class="woodgrain active blocked item">
+                                <div class="imagecover">
+                                    <img src="img/Woodgrain_RAL9016.jpg" alt="">
+                                </div>
+                                <div class="manipulation_label">Woodgrain</div>
+                            </div>
+                            <div class="decocolor item">
+                                <div class="imagecover">
+                                    <img src="img/Decocolor_Golden-Oak.jpg" alt="">
+                                </div>
+                                <div class="manipulation_label">Decocolor</div>
+                            </div>
+                            <div class="planar item">
+                                <div class="imagecover">
+                                    <img src="img/Planar_CH9016.jpg" alt="">
+                                </div>
+                                <div class="manipulation_label">Planar</div>
+                            </div>
+                            <div class="diamond item">
+                                <div class="imagecover">
+                                    <img src="img/Duragrain-Diamond_Diamond-Black.jpg" alt="">
+                                </div>
+                                <div class="manipulation_label">Duragrain Diamond</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manipulation_block_el color">
+                        <div class="manipulation_title">Цвет | Декоративная отделка</div>
+                        <div class="manipulation_action colors">
+                            <div class="for_woodgrain ssax hide">
+                                <div class="imagecover active item"><img  title="RAL 9016, белый" src="img/Woodgrain_RAL9016.jpg" alt=""></div>
+                                <div class="imagecover item"><img title="RAL 7016, серый антрацит" src="img/Woodgrain_RAL7016.jpg" alt=""></div>
+                                <div class="imagecover item"><img title="RAL 8028, коричневый" src="img/Woodgrain_RAL8028.jpg" alt=""></div>
+                                <div class="imagecover item"><img title="RAL 9006, цвет белого алюминия" src="img/Woodgrain_RAL9006.jpg" alt=""></div>
+                                <div class="imagecover item"><img title="RAL 9007, цвет серого алюминия" src="img/Woodgrain_RAL9007.jpg" alt=""></div>
+                                <div class="imagecover item"><img title="CH 703, антрацит 'металлик'" src="img/Woodgrain_CH703.jpg" alt=""></div>
+                            </div>
+                            <div class="for_decocolor ssax show">
+                                <div class="imagecover item"><img title="Золотой дуб" src="img/Decocolor_Golden-Oak.jpg" alt="Золотой дуб"></div>
+                                <div class="imagecover item"><img title="Тёмный дуб" src="img/Decocolor_Dark-Oak.jpg" alt="Темный дуб"></div>
+                                <div class="imagecover item"><img title="Ночной дуб" src="img/Decocolor_Night-Oak.jpg" alt=""></div>
+                            </div>
+                            <div class="for_planar ssax hide">
+                                <div class="imagecover item"><img title="CH 9016 Matt deluxe, белый" src="img/Planar_CH9016.jpg" alt="CH 9016 Matt deluxe, белый"></div>
+                                <div class="imagecover item"><img title="CH 7016 Matt deluxe, серый антрацит" src="img/Planar_CH7016.jpg" alt="CH 7016 Matt deluxe, серый антрацит"></div>
+                                <div class="imagecover item"><img title="CH 8028 Matt deluxe, коричневый" src="img/Planar_CH8028.jpg" alt="CH 9016 Matt deluxe, коричневый"></div>
+                                <div class="imagecover item"><img title="CH 9006 Matt deluxe, цвет белого алюминия" src="img/Planar_CH9006.jpg" alt="CH 9016 Matt deluxe, цвет белого алюминия"></div>
+                                <div class="imagecover item"><img title="CH 703, Matt deluxe, антрацит «металлик»" src="img/Woodgrain_CH703.jpg" alt="CH 703, Matt deluxe, антрацит «металлик»"></div>
+                                <div class="imagecover item"><img title="CH 9007, Matt deluxe, цвет серого алюминия" src="img/Planar_CH9007.jpg" alt="CH 9007 Matt deluxe, белый"></div>
+                            </div>
+                            <div class="for_diamond ssax hide">
+                                <div class="imagecover item"><img title="Diamond Black" src="img/Duragrain-Diamond_Diamond-Black.jpg" alt="Diamond Black"></div>
+                                <div class="imagecover item"><img title="Diamond Anthracite" src="img/Duragrain-Diamond_Diamond-Anthracite.jpg" alt="Diamond Anthracite"></div>
+                                <div class="imagecover item"><img title="Diamond Basalt" src="img/Duragrain-Diamond_Diamond-Basalt.jpg" alt="Diamond Basalt"></div>
+                                <div class="imagecover item"><img title="Diamond Stone" src="img/Duragrain-Diamond_Diamond-Stone.jpg" alt="Diamond Stone"></div>
+                                <div class="imagecover item"><img title="Diamond Brown" src="img/Duragrain-Diamond_Diamond-Brown.jpg" alt="Diamond Brown"></div>
+                                <div class="imagecover item"><img title="Diamond Red" src="img/Duragrain-Diamond_Diamond-Red.jpg" alt="Diamond Red"></div>
+                                <div class="imagecover item"><img title="Diamond Green" src="img/Duragrain-Diamond_Diamond-Green.jpg" alt="Diamond Green"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary_info">
+                    <div class="headliner">Ваши ворота:</div>
+                    <p>Гаражные секционные ворота, <span class="hnw"></span><span class="gof"></span><span class="surface"></span><span class="clr"></span></p>
+                </div>
+                <div class="summary_price">
+                    65000 Р *
+                </div>
+            </div>
+            <div class="order"><a class="headliner" href="https://www.vorota-surgut.ru/zakazat-produktsiyu">Заказать</a></div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
