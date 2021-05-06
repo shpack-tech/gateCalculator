@@ -152,6 +152,10 @@ select:focus {
 }
 .info {
 	margin: 0 0 0 10px;
+	cursor: pointer;
+}
+.info:hover {
+	color: #f56565;
 }
 .l_gofr {
 }
