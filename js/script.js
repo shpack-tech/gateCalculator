@@ -142,4 +142,9 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.reload').addEventListener('click', function(){
         reset()
     })
+    document.querySelectorAll('.info').forEach(el => {
+        el.addEventListener('click', function(){
+            window.location.href = 'https://www.vorota-surgut.ru/images/files/sek_gates_home1.pdf'
+        });
+    })
 });
