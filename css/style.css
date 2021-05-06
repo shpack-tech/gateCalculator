@@ -309,7 +309,7 @@ select:focus {
 		width: 100%;
 	}
 	.selector::after {
-		right: 4rem;
+		right: 5rem;
 	}
 	.summary {
 		flex-direction: column;
